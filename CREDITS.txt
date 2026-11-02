@@ -10,6 +10,7 @@ Credits / 제작 및 사용 에셋
   https://freesound.org/people/GFL7/sounds/276964/
 - "pistol reload sound.mp3" by GFL7 (CC0)
 - Additional sound effects from Pixabay (Pixabay Content License)
+- Some sound effects (e.g., zombie growls): generated with VARCO 3D Sound
 
 [Music]
 - BGM: generated with VARCO 3D Sound

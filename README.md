@@ -3,7 +3,7 @@
 > 지원 동기는 적게 하지만, 그 이유가 무엇이든 중요하지 않다.
 
 크리스탈 좀비 행성에서 28일 동안 방어벽 뒤에서 버티며 마감 미션을 채우는 **탑다운 웨이브 디펜스**입니다.
-Unity 6 · URP · New Input System · C# (스크립트 109개, 약 6,800줄)
+Unity 6 · URP · New Input System · C# (스크립트 112개, 약 7,000줄)
 
 ## 게임 한눈에 보기
 - **28일의 런**: 7일마다 크리스탈 상납 마감, 넘기면 즉시 게임오버, 28일을 채우면 로켓으로 귀환
@@ -57,7 +57,7 @@ Unity 6 · URP · New Input System · C# (스크립트 109개, 약 6,800줄)
 [`SaveManager.cs`](Assets/_Project/Scripts/Core/SaveManager.cs)
 - JSON 3칸 (`JsonUtility`), 전투에서 복귀할 때 자동 저장합니다.
 - **에디터와 빌드의 저장 경로를 `#if UNITY_EDITOR`로 분리**했습니다. 에디터에서는 세이브 파일을 바로 열어 보고, 빌드에서는 `persistentDataPath`를 씁니다.
-- 마감 실패로 끝난 런은 저장하지 않고, 서바이벌 난이도는 사망 시 칸을 삭제합니다.
+- 마감 실패로 끝난 런은 저장하지 않고, 서바이벌 난이도는 게임오버 화면에서 나갈 때 칸을 삭제합니다.
 
 ### 8. 오디오 시스템
 [`AudioManager.cs`](Assets/_Project/Scripts/Core/AudioManager.cs)
@@ -84,7 +84,7 @@ Assets/_Project/
 |---|---|
 | 3D 모델 · UI 이미지 | AI 생성 (VARCO 3D, VARCO Image, GPT Image) |
 | BGM | AI 생성 (VARCO 3D Sound) |
-| 효과음 | Pixabay, Freesound |
+| 효과음 | Pixabay, Freesound, 일부 AI 생성 (VARCO 3D Sound) |
 | 애니메이션 | Mixamo |
 | 이펙트 | WarFX by Jean Moreno (Unity Asset Store, 무료) |
 | 폰트 | S-Core Dream |
